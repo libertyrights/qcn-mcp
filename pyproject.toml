@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qcn-mcp"
+version = "0.1.0"
+description = "MCP server for parsing/working with Qualcomm QCN (NV) files"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "libertyrights" }]
+keywords = ["mcp", "qualcomm", "qcn", "nv", "qpst", "forensics"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+dependencies = ["mcp"]
+
+[project.urls]
+Homepage = "https://github.com/libertyrights/qcn-mcp"
+
+[tool.setuptools]
+py-modules = ["qcn_mcp_server"]
